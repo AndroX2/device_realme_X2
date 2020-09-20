@@ -90,6 +90,7 @@ ro.com.google.ime.kb_pad_port_b=1
 dev.pm.dyn_samplingrate=1
 persist.front.skipdisplay.enable=1
 debug.cpurend.vsync=false
+ro.hardware.egl=adreno
 
 # Iorap
 iorapd.perfetto.enable=true
