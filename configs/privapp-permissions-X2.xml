@@ -30,12 +30,15 @@
     <privapp-permissions package="com.android.launcher3">
         <permission name="android.permission.MANAGE_ACTIVITY_STACKS"/>
         <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
     </privapp-permissions>
 
 
     <!-- Additional permissions on top of privapp-permissions-platform.xml -->
     <privapp-permissions package="com.android.settings">
         <permission name="android.permission.RESET_BATTERY_STATS"/>
+        <permission name="android.permission.ACCESS_FONT_MANAGER"/>
     </privapp-permissions>
 
     <!-- Additional permissions on top of privapp-permissions-platform.xml -->
@@ -44,6 +47,9 @@
         <permission name="android.permission.WRITE_APN_SETTINGS"/>
         <permission name="android.permission.REBOOT"/>
         <permission name="android.permission.RECOVERY"/>
+        <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS"/>
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <permission name="lineageos.permission.MANAGE_LIVEDISPLAY"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.wallpaper">
@@ -54,6 +60,64 @@
 
     <privapp-permissions package="com.google.android.contacts">
         <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.wallpaper">
+        <permission name="android.permission.READ_WALLPAPER_INTERNAL"/>
+        <permission name="android.permission.BIND_WALLPAPER"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.google.android.apps.turbo">
+        <permission name="android.permission.CONFIGURE_DISPLAY_BRIGHTNESS"/>
+        <permission name="android.permission.CHANGE_APP_IDLE_STATE"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
+        <permission name="android.permission.BRIGHTNESS_SLIDER_USAGE"/>
+        <permission name="android.permission.BATTERY_STATS"/>
+        <permission name="android.permission.ACCESS_AMBIENT_LIGHT_STATS"/>
+        <permission name="android.permission.POWER_SAVER"/>
+        <permission name="android.permission.DUMP"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.settings">
+        <permission name="lineageos.permission.MANAGE_LIVEDISPLAY"/>
+        <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.omadm.service">
+        <permission name="android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS"/>
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.CONNECTIVITY_INTERNAL"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.verizon.mips.services">
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.DELETE_PACKAGES"/>
+        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.UPDATE_APP_OPS_STATS"/>
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.SET_TIME"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.BATTERY_STATS"/>
+        <permission name="android.permission.DUMP"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.CONNECTIVITY_INTERNAL"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.DUMP"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.custom.ambient.display">
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
 </permissions>
