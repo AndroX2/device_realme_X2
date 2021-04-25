@@ -145,6 +145,10 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlay \
     NotchBarKiller
 
+# Parts
+PRODUCT_PACKAGES += \
+    RealmeParts
+
 # Power
 PRODUCT_PACKAGES += \
     power.qcom:64
