@@ -50,12 +50,10 @@ public class AppNotification {
         Notification notification = notificationBuilder.build();
         notification.flags |= Notification.FLAG_NO_CLEAR;
         mNotificationManager.notify(Notification_Channel_ID, notification);
-        NotificationSent = true;
     }
 
     public static void Cancel(Context context, int Notification_Channel_ID) {
         mNotificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         mNotificationManager.cancel(Notification_Channel_ID);
-        NotificationSent = false;
     }
 }
