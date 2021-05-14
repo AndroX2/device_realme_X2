@@ -49,6 +49,9 @@
     <!-- Proximity sensor -->
     <string name="proximity_sensor_title">Proximity sensor</string>
 
+    <!-- FOD sensor-->
+    <string name="fod_sensor_title">FOD Sensor</string>
+
     <!-- Pick-up gesture -->
     <string name="pick_up_gesture_title">Pick-up</string>
     <string name="pick_up_gesture_summary">Pulse notifications on pick-up</string>
@@ -68,6 +71,14 @@
     <!-- Smart wake strings-->
     <string name="smart_wake_gesture_title">Smart Wake</string>
     <string name="smart_wake_gesture_summary">Pulse notifications on slight motion of device and wake screen when picked up</string>
+
+    <!-- FOD wake strings-->
+    <string name="fod_wake_gesture_title">Wake Screen with FOD</string>
+    <string name="fod_wake_gesture_summary">Enabling this allows to use Screen Off FOD Gesture</string>
+
+    <!-- Prevent FOD wake strings-->
+    <string name="fod_sleep_gesture_title">Prevent accidental wakes</string>
+    <string name="fod_sleep_gesture_summary">Turn off the display if the device does not unlock with Screen Off FOD Gesture</string>
 
     <!-- Dialog texts -->
     <string name="dialog_ok">OK</string>
