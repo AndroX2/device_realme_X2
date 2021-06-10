@@ -84,6 +84,7 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 }
 
 Return<void> FingerprintInscreen::onPress() {
+    set(DIMLAYER_PATH, 1);
     set(FP_PRESS_PATH, 1);
     return Void();
 }
@@ -97,6 +98,8 @@ Return<void> FingerprintInscreen::onShowFODView() {
     if((get(DOZE_STATUS, 0) == 1) || (get(DOZE_STATUS, 0) == 3))
     set(NOTIFY_BLANK_PATH, 1);
     set(DIMLAYER_PATH, 1);
+    if(get(DOZE_STATUS, 0) == 3)
+    set(DIMLAYER_PATH, 0);
     return Void();
 }
 
