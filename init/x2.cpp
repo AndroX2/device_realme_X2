@@ -90,24 +90,24 @@ void setRMX(const unsigned int variant)
 
     //RMX1991
     prop[0] = {
-        "realme/RMX1991/RMX1991CN:10/QKQ1.191201.002/1599815101:user/release-keys",
-        "unknown-user 10 QKQ1.191201.002 eng.root.20201028.204016 release-keys",
+        "google/redfin/redfin:11/RQ3A.210605.005/7349499:user/release-keys",
+        "redfin-user 11 RQ3A.210605.005 7349499 release-keys",
         "RMX1991",
         "RMX1991CN",
     };
 
-    //RMX992
+    //RMX1992
     prop[1] = {
-        "realme/RMX1992/RMX1992L1:10/QKQ1.191201.002/1597316082:user/release-keys",
-        "unknown-user 10 QKQ1.191201.002 eng.root.20201012.094803 release-keys",
+        "google/redfin/redfin:11/RQ3A.210605.005/7349499:user/release-keys",
+        "redfin-user 11 RQ3A.210605.005 7349499 release-keys",
         "RMX1992",
         "RMX1992L1",
     };
 
     //RMX1993
     prop[2] = {
-        "realme/RMX1993EEA/RMX1993L1:10/QKQ1.191201.002/1597316082:user/release-keys",
-        "unknown-user 10 QKQ1.191201.002 eng.root.20201012.094557 release-keys",
+        "google/redfin/redfin:11/RQ3A.210605.005/7349499:user/release-keys",
+        "redfin-user 11 RQ3A.210605.005 7349499 release-keys",
         "RMX1993",
         "RMX1993L1",
     };
