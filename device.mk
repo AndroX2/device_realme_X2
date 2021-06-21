@@ -190,10 +190,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.4
 
-# Recorder
-PRODUCT_PACKAGES += \
-    OPScreenRecorder
-
 # Soong
 PRODUCT_BOARD_PLATFORM := sm6150
 PRODUCT_USES_QCOM_HARDWARE := true
