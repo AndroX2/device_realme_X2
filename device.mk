@@ -198,6 +198,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
+# Wifi Overlay
+PRODUCT_PACKAGES += \
+    RealmeX2WifiOverlay
+
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
