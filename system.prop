@@ -79,6 +79,7 @@ ro.vendor.display.ad.sdr_calib_data=/vendor/etc/OPPO_OLED_AD_calib.cfg
 # Graphics
 dev.pm.dyn_samplingrate=1
 persist.front.skipdisplay.enable=1
+debug.cpurend.vsync=false
 
 #lmkd option
 ro.config.low_ram=false
