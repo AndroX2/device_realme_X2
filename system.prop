@@ -48,6 +48,7 @@ persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
 
 # Dex
+dalvik.vm.dex2oat64.enabled=true
 ro.vendor.qti.am.reschedule_service=true
 ro.sys.fw.dex2oat_thread_count=8
 dalvik.vm.boot-dex2oat-threads=8
