@@ -91,13 +91,13 @@
             android:title="@string/dnd_title"
             android:summary="@string/dnd_summary" />
 
-        <Preference
+       <Preference
             android:key="doze"
             android:title="@string/ambient_display_gestures_title"
             android:summary="@string/ambient_display_gestures_summary">
             <intent android:action="android.intent.action.MAIN"
-                 android:targetPackage="com.realmeparts"
-                 android:targetClass="com.realmeparts.doze.DozeSettingsActivity"/>
+                 android:targetPackage="org.lineageos.settings"
+                 android:targetClass="org.lineageos.settings.doze.DozeSettingsActivity" />
         </Preference>
 
     </PreferenceCategory>
