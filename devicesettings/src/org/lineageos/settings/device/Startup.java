@@ -60,10 +60,6 @@ public class Startup extends BroadcastReceiver {
         restore(OTGModeSwitch.getFile(), enabled);
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_GAME_SWITCH, false);
         restore(GameModeSwitch.getFile(), enabled);
-        enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_CHARGING_SWITCH, false);
-        if (enabled) {
-            context.startService(new Intent(context, SmartChargingService.class));
-        }
     }
 
     private boolean hasRestoredTunable(Context context) {
