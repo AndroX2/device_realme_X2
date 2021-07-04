@@ -888,6 +888,10 @@
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
     <bool name="config_displayBlanksAfterDoze">true</bool>
 
+    <!-- If true, the display will be shifted around in ambient mode. -->
+    <bool name="config_enableBurnInProtection">true</bool>
+    <integer name="config_shift_interval">40</integer>
+
     <!-- Try-again polling interval in milliseconds, in case the network request failed -->
     <integer name="config_ntpPollingIntervalShorter">6000</integer>
     <bool name="config_requireCallCapableAccountForHandle">true</bool>
