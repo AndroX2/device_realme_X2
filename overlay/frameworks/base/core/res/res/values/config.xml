@@ -1176,4 +1176,7 @@
     <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
     <integer name="config_screenRecorderMaxFramerate">60</integer>
 
+    <!-- Shows the required view for in-display fingerprint -->
+    <bool name="config_supportsInDisplayFingerprint">true</bool>
+
 </resources>
