@@ -155,6 +155,9 @@ persist.sys.oppo.fusionlight=true
 persist.sys.oppo.proximity=true
 ro.qti.sensors.wu=false
 
+# Spark specific properties 
+ro.spark.maintainer=ʜᴀʀsʜ
+
 # SSR
 persist.vendor.ssr.enable_ramdumps=0
 persist.vendor.ssr.restart_level=ALL_ENABLE
