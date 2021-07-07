@@ -234,7 +234,7 @@ public class DeviceSettings extends PreferenceFragment
         mPreferenceCategory = (PreferenceCategory) findPreference(KEY_CATEGORY_CHARGING);
 
         if (Utils.fileWritable(SmartChargingService.mmi_charging_enable)) {
-            if (!Utils.fileWritable(SmartChargingService.cool_down)) {
+            if (Utils.fileWritable(SmartChargingService.cool_down)) {
                 mPreferenceCategory.removePreference(findPreference(KEY_CHARGING_SPEED));
             }
         } else {
