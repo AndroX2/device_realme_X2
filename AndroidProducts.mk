@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The AOSP Project
+# Copyright (C) 2020 The nad Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_X2.mk
+    $(LOCAL_DIR)/nad_X2.mk
+
 
 COMMON_LUNCH_CHOICES := \
-    spark_X2-user \
-    spark_X2-userdebug \
-    spark_X2-eng
+    nad_X2-eng \
+    nad_X2-user \
+    nad_X2-userdebug
