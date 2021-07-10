@@ -95,6 +95,9 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# Enable real time lockscreen charging current values (https://github.com/NusantaraROM-Devices/device_xiaomi_raphael/commit/5ec186c596972ac31a8f3666c595596013c0b8a0)
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
