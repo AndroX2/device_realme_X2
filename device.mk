@@ -9,6 +9,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/realme/X2/X2-vendor.mk)
 
@@ -16,13 +19,17 @@ $(call inherit-product, vendor/realme/X2/X2-vendor.mk)
 PRODUCT_TARGET_VNDK_VERSION := 29
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_WIDTH := 1080
+
 #LMKD STAT LOGGING
 TARGET_LMKD_STATS_LOG := true
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-aosp
 
 # Properties
 -include $(LOCAL_PATH)/product_props.mk
@@ -96,7 +103,7 @@ PRODUCT_COPY_FILES += \
 
 # Lineage Specific perms
 PRODUCT_COPY_FILES += \
-    vendor/nusantara/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    vendor/aosp/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # HIDL
 PRODUCT_PACKAGES += \
