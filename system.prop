@@ -79,6 +79,9 @@ ro.vendor.display.ad.sdr_calib_data=/vendor/etc/OPPO_OLED_AD_calib.cfg
 # Google keyboard
 ro.com.google.ime.height_ratio=1.1
 
+# GBoard Spacing
+ro.com.google.ime.kb_pad_port_b=1
+
 # Graphics
 dev.pm.dyn_samplingrate=1
 persist.front.skipdisplay.enable=1
