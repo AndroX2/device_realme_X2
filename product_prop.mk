@@ -24,3 +24,5 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Use Vulkan backend for Skia UI rendering
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.hwui.renderer=skiavk
+    debug.sf.disable_backpressure=1 \
+	ro.surface_flinger.max_frame_buffer_acquired_buffers=3
