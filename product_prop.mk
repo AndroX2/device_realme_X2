@@ -13,6 +13,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.disable_rescue=true
 endif
 
+# DHA Tunning
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.dha_tunnable=1
+
 # Priv-app permission
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log
@@ -21,8 +25,17 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.lcd_density=480
 
+# Smoothens UI
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.service.lgospd.enable=0 \
+    persist.service.pcsync.enable=0
+
 # Use Vulkan backend for Skia UI rendering
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.hwui.renderer=skiavk
     debug.sf.disable_backpressure=1 \
 	ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
+# Venom
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.running_without_sync_framework=true
