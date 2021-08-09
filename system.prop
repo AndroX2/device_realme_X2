@@ -90,6 +90,7 @@ debug.cpurend.vsync=false
 # Iorap
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
+ro.iorapd.enable=true
 
 #lmkd option
 ro.config.low_ram=false
