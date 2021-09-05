@@ -110,17 +110,6 @@
                     android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
         </service>
-        <service
-            android:name="com.realmeparts.RefreshRateTileService"
-            android:icon="@drawable/ic_refresh_tile_60"
-            android:label="@string/tile_refresh_rate"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-
         <service android:name="com.realmeparts.FPSInfoService"
                 android:exported="false">
         </service>
@@ -128,16 +117,6 @@
             android:name="com.realmeparts.OtgToggleService"
             android:icon="@drawable/ic_otg_tile"
             android:label="@string/tile_otg_mode"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-        <service
-            android:name="com.realmeparts.CABCTileService"
-            android:icon="@drawable/ic_cabc"
-            android:label="@string/cabc_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action
