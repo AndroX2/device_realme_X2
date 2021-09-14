@@ -47,6 +47,7 @@
     <string name="game_mode_notif_content">Game Mode is activated</string>
 
     <!-- fps info -->
+    <string name="fps_title">FPS Info</string>
     <string name="fps_info_title">FPS overlay</string>
     <string name="fps_info_summary">Show overlay with current frames per second</string>
 
