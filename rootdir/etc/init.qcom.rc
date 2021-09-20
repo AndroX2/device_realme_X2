@@ -29,6 +29,11 @@ on late-fs
     # Boot time FS tune
     write /sys/block/dm-3/queue/read_ahead_kb 2048
 
+    # Enable ZRAM on boot_complete
+    rm /data/unencrypted/zram_swap
+    swapon_all
+    write /proc/sys/vm/swappiness 100    
+
 service vendor.ss_ramdump_local /vendor/bin/subsystem_ramdump
     class late_start
     user system
