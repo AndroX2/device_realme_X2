@@ -1232,4 +1232,7 @@
          screenshot chord -->
    <integer name="config_screenshotChordKeyTimeout">0</integer>
 
+     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
+    <bool name="config_zramWriteback">true</bool>
+
 </resources>
