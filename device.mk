@@ -229,20 +229,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RealmeX2WifiOverlay
 
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libavservices_minijail \
-    libavservices_minijail.vendor \
-    libnl \
-    libqdMetaData \
-    libqdMetaData.system \
-    libqdMetaData.vendor \
-    libwfdaac_vendor \
-    vendor.display.config@2.0
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.x2
