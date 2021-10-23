@@ -125,6 +125,9 @@ debug.sf.early.app.duration=16500000
 debug.sf.earlyGl.sf.duration=13500000
 debug.sf.earlyGl.app.duration=21000000
 
+# One handed mode
+ro.support_one_handed_mode=true
+
 # Override Display Density
 ro.sf.lcd_density=480
 
