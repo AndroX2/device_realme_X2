@@ -276,32 +276,11 @@ public class DeviceSettings extends PreferenceFragment
             }
         }
 
-        JSONArray DC = jsonOB.getJSONArray(KEY_DC_SWITCH);
-        for (int i = 0; i < DC.length(); i++) {
-            if (ProductName.toUpperCase().contains(DC.getString(i))) {
-                {
                     DC_DeviceMatched = true;
-                }
-            }
-        }
 
-        JSONArray HBM = jsonOB.getJSONArray(KEY_HBM_SWITCH);
-        for (int i = 0; i < HBM.length(); i++) {
-            if (ProductName.toUpperCase().contains(HBM.getString(i))) {
-                {
                     HBM_DeviceMatched = true;
-                }
-            }
-        }
 
-        JSONArray sRGB = jsonOB.getJSONArray(KEY_SRGB_SWITCH);
-        for (int i = 0; i < sRGB.length(); i++) {
-            if (ProductName.toUpperCase().contains(DC.getString(i))) {
-                {
                     sRGB_DeviceMatched = true;
-                }
-            }
-        }
 
         // Remove CABC preference if device is unsupported
         if (!CABC_DeviceMatched) {
