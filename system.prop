@@ -35,7 +35,7 @@ debug.sf.disable_backpressure=1
 
 # Camera
 persist.vendor.camera.light_ae.enable=1
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap,com.particlesdevs.photoncamera
 ro.camera.hfr.enable=1
 ro.camera.relight.enable=0
 ro.camera.attr.detect.enable=1
