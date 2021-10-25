@@ -61,10 +61,6 @@ PRODUCT_PACKAGES += \
     BluetoothQti \
     libldacBT_bco
 
-# Camera
-PRODUCT_PACKAGES += \
-    Snap
-
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.qcom.rc
@@ -161,6 +157,13 @@ PRODUCT_PACKAGES += \
 # Parts
 PRODUCT_PACKAGES += \
     RealmeParts
+
+# PhotonCamera
+PRODUCT_PACKAGES += \
+    PhotonCamera
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/PhotonCamera/privapp-permissions-PhotonCamera.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-PhotonCamera.xml
 
 # Power
 PRODUCT_PACKAGES += \
