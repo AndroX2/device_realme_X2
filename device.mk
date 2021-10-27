@@ -92,6 +92,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RealmeDoze
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.0-service \
+    android.hardware.drm@1.4-service.clearkey \
+    android.hardware.drm@1.0 \
+    android.hardware.drm@1.1 \
+    android.hardware.drm@1.2 \
+    android.hardware.drm@1.3
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.x2 \
