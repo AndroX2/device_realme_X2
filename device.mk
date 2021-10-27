@@ -56,6 +56,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info_oppo_19771.xml:system/etc/audio_platform_info_oppo_19771.xml \
     $(LOCAL_PATH)/audio/mixer_paths_19771.xml:system/etc/mixer_paths_19771.xml
 
+# APEX
+OVERRIDE_PRODUCT_COMPRESSED_APEX := false
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     BluetoothQti \
