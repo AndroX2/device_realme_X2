@@ -105,7 +105,7 @@ public:
     }
 
     Return<void> onTouchUp(uint64_t deviceId) { set(DIMLAYER_PATH, STATUS_ON); return Void(); }
-    Return<void> onTouchDown(uint64_t deviceId) { return Void(); }
+    Return<void> onTouchDown(uint64_t deviceId) { set(DIMLAYER_PATH, STATUS_OFF); return Void(); }
     Return<void> onSyncTemplates(uint64_t deviceId, const hidl_vec<uint32_t>& fingerId, uint32_t remaining) { return Void(); }
     Return<void> onFingerprintCmd(int32_t deviceId, const hidl_vec<uint32_t>& groupId, uint32_t remaining) { return Void(); }
     Return<void> onImageInfoAcquired(uint32_t type, uint32_t quality, uint32_t match_score) { return Void(); }
@@ -219,6 +219,7 @@ Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, floa
          LOG (INFO) << "onFingerDown(): Finger press detected moving forward with method instructions.";
      }
     set(FOD_STATUS_PATH, STATUS_ON);
+    set(DIMLAYER_PATH, STATUS_ON);
     return Void();
 }
 
