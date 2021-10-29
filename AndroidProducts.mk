@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The AOSP Project
+# Copyright (C) 2020 The cafex Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,10 +15,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_X2.mk
+    $(LOCAL_DIR)/cafex_X2.mk
 
 
 COMMON_LUNCH_CHOICES := \
-    aosp_X2-eng \
-    aosp_X2-user \
-    aosp_X2-userdebug
+    cafex_X2-eng \
+    cafex_X2-user \
+    cafex_X2-userdebug

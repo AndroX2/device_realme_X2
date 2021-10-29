@@ -26,7 +26,7 @@ TARGET_LMKD_STATS_LOG := true
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-aosp
+    $(LOCAL_PATH)/overlay-ex
 
 # Properties
 -include $(LOCAL_PATH)/product_props.mk
