@@ -126,4 +126,24 @@
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.android.connectivity.metrics">
+         <permission name="android.permission.MODIFY_PHONE_STATE"/>
+         <permission name="android.permission.DUMP"/>
+         <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+     </privapp-permissions>      
+              
+    <privapp-permissions package="com.google.android.apps.pixelmigrate">        
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
+        <permission name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/> 
+        <permission name="android.permission.MANAGE_USB"/>
+        <permission name="android.permission.BACKUP"/>           
+    </privapp-permissions>       
+
+    <privapp-permissions package="com.verizon.obdm"> 
+       <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    </privapp-permissions> 
+
 </permissions>
