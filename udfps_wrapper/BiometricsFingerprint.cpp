@@ -313,7 +313,7 @@ Return<RequestStatus> BiometricsFingerprint::authenticate(uint64_t operationId, 
         if (DEBUG_ADAPTOR) {
             LOG (INFO) << "BiometricsFingerprint(): authenticate(): called. setting setFingerprintScreenState() to false.";
         }
-        setFingerprintScreenState(false);
+        setFingerprintScreenState(true);
     }
     return status;
 }
