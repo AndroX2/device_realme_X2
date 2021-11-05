@@ -86,7 +86,7 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    RealmeProximityHelper \
+    RealmeHardwareAssist \
     RealmeDoze
 
 # DRM
