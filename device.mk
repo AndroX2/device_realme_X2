@@ -88,6 +88,10 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libvulkan
 
+# DotKiller
+PRODUCT_PACKAGES += \
+    DotKiller
+
 # Doze
 PRODUCT_PACKAGES += \
     RealmeDoze
