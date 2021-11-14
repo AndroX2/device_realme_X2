@@ -175,6 +175,7 @@ PRODUCT_PACKAGES += \
 
 # Parts
 PRODUCT_PACKAGES += \
+    RealmeProximityHelper \
     RealmeParts
 
 # Power
