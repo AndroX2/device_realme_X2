@@ -24,3 +24,8 @@ PRODUCT_MANUFACTURER := realme
 BUILD_FINGERPRINT := "google/redfin/redfin:12/SP1A.211105.003/7757856:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
+
+# Platform
+TARGET_BOARD_PLATFORM := sm6150
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno618
+BOARD_USES_QCOM_HARDWARE := true
