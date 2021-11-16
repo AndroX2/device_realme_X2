@@ -90,24 +90,24 @@ void setRMX(const unsigned int variant)
 
     //RMX1991
     prop[0] = {
-        "google/redfin/redfin:12/SPB5.210812.002/7671067:user/release-keys",
-        "redfin-user 12 SPB5.210812.002 7671067 release-keys",
+        "google/redfin/redfin:12/SP1A.211105.003/7757856:user/release-keys",
+        "redfin-user 12 SP1A.211105.003 7757856 release-keys",
         "RMX1991",
         "RMX1991CN",
     };
 
     //RMX1992
     prop[1] = {
-        "google/redfin/redfin:12/SPB5.210812.002/7671067:user/release-keys",
-        "redfin-user 12 SPB5.210812.002 7671067 release-keys",
+        "google/redfin/redfin:12/SP1A.211105.003/7757856:user/release-keys",
+        "redfin-user 12 SP1A.211105.003 7757856 release-keys",
         "RMX1992",
         "RMX1992L1",
     };
 
     //RMX1993
     prop[2] = {
-        "google/redfin/redfin:12/SPB5.210812.002/7671067:user/release-keys",
-        "redfin-user 12 SPB5.210812.002 7671067 release-keys",
+        "google/redfin/redfin:12/SP1A.211105.003/7757856:user/release-keys",
+        "redfin-user 12 SP1A.211105.003 7757856 release-keys",
         "RMX1993",
         "RMX1993L1",
     };
