@@ -185,6 +185,14 @@ void BiometricsFingerprint::setFingerprintScreenState(const bool on) {
         on ? vendor::oppo::hardware::biometrics::fingerprint::V2_1::FingerprintScreenState::FINGERPRINT_SCREEN_ON :
             vendor::oppo::hardware::biometrics::fingerprint::V2_1::FingerprintScreenState::FINGERPRINT_SCREEN_OFF
         );
+    if ((!isEnrolling)&&on){
+            std::thread([this]() {
+            std::this_thread::sleep_for(std::chrono::milliseconds(380));//turn display off before enabling dimlayer
+            if (!isEnrolling) {
+                set(DIMLAYER_PATH, STATUS_ON);
+            }
+        }).detach();
+    } else
     set(DIMLAYER_PATH, on ? STATUS_ON: STATUS_OFF);
 }
 
