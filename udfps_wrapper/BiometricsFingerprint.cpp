@@ -26,6 +26,9 @@
 
 #define FOD_STATUS_PATH "/sys/kernel/oppo_display/notify_fppress"
 #define DIMLAYER_PATH "/sys/kernel/oppo_display/dimlayer_hbm"
+#define PS_MASK "/proc/touchpanel/prox_mask"
+#define AOD_PRESS "/proc/touchpanel/fod_aod_pressed"
+#define DOZING "/proc/touchpanel/DOZE_STATUS"
 #define STATUS_ON 1
 #define STATUS_OFF 0
 #define BIND(fn) [this](auto&&... args) -> decltype(auto) { return this->fn(std::forward<decltype(args)>(args)...); }
@@ -41,6 +44,15 @@ template <typename T>
 static inline void set(const std::string& path, const T& value) {
     std::ofstream file(path);
     file << value;
+}
+
+template <typename T>
+static inline T get(const std::string& path, const T& def) {
+    std::ifstream file(path);
+    T result;
+
+    file >> result;
+    return file.fail() ? def : result;
 }
 
 BiometricsFingerprint::BiometricsFingerprint() : isEnrolling(false) {
@@ -107,6 +119,10 @@ public:
     }
 
     Return<void> onTouchDown(uint64_t deviceId) {
+        if (get(DOZING, STATUS_OFF)){
+            set(AOD_PRESS, STATUS_ON);
+            set(PS_MASK, STATUS_ON);
+        }
         set(FOD_STATUS_PATH, STATUS_OFF);
         return Void();
     }
