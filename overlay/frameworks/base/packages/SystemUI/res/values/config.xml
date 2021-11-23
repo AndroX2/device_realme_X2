@@ -31,4 +31,9 @@
 
     <!-- The radius of the enrollment progress bar, in dp -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">102</integer>
+
+    <string name="proximity_sensor_type" translatable="false">android.sensor.proximity</string>
+    <item name="proximity_sensor_threshold" translatable="false" format="float"
+          type="dimen">4.99</item>
+
 </resources>
