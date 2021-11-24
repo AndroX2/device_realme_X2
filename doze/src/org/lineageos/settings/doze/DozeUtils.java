@@ -41,6 +41,7 @@ public final class DozeUtils {
     protected static final String GESTURE_POCKET_KEY = "gesture_pocket";
     protected static final String GESTURE_RAISE_TO_WAKE = "gesture_raise_to_wake";
     protected static final String GESTURE_SMART_WAKE_KEY = "gesture_smart_wake";
+    protected static final String DOZE_ENABLE = "doze_enable";
     protected static final String GESTURE_FOD_WAKE_KEY = "gesture_fod_wake";
     protected static final String GESTURE_FOD_SLEEP_KEY = "gesture_fod_sleep";
     private static final String TAG = "DozeUtils";
