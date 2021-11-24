@@ -29,6 +29,7 @@
     <string name="device_settings_app_name">Advanced settings</string>
 
     <!-- Ambient Display -->
+    <string name="ambient_enable">Use ambient display</string>
     <string name="ambient_display_title">Ambient display</string>
     <string name="ambient_display_enable_title">Ambient display</string>
     <string name="ambient_display_enable_summary">Wake screen when you receive notifications</string>
