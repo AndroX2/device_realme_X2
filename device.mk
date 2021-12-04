@@ -62,7 +62,10 @@ OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 # Bluetooth
 PRODUCT_PACKAGES += \
     BluetoothQti \
-    libldacBT_bco
+    android.hardware.bluetooth@1.0.vendor \
+    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -263,3 +266,7 @@ PRODUCT_PACKAGES += \
 # Touch
 PRODUCT_PACKAGES += \
     lineage.touch@1.0-service.x2
+    
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := \
+    bt 
