@@ -118,6 +118,7 @@ TARGET_USES_COLOR_METADATA := true
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
