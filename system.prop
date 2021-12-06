@@ -72,6 +72,9 @@ ro.surface_flinger.set_display_power_timer_ms=10000
 ro.surface_flinger.set_touch_timer_ms=5000
 ro.surface_flinger.set_idle_timer_ms=9000
 
+# Dual sim in settings
+persist.sys.fflag.override.settings_provider_model=false
+
 # Google keyboard
 ro.com.google.ime.height_ratio=1
 
@@ -133,6 +136,9 @@ ro.ril.disable.power.collapse=0
 
 # Pre-rendering
 ro.vendor.perf.scroll_opt=true
+
+# Priv-app permission
+ro.control_privapp_permissions=log
 
 # RCS and IMS
 persist.dbg.ims_volte_enable=1
