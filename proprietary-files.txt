@@ -130,3 +130,9 @@ system_ext/framework/qcrilhook.jar
 
 # Telephony (qti-telephony-common) - from LA.QSSI.11.0.r1-11600-qssi.0
 system_ext/framework/qti-telephony-common.jar|95df25f17305ad570f1b1e0fa59534edce6619f8
+
+# HotWord Enrollment - from oneplus8pro qssi-user-11-RP1A.201005.001 2107082312 release-keys 
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|aca670c20dfee58a96a471b64ea7d63a0a3fb812
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|59192e638ea3b13ee9005d730ce269db66a4d10a
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
+-system_ext/framework/com.android.hotwordenrollment.common.util.jar|bef92589e75a6da6043f85f4b9b0e85866429624
